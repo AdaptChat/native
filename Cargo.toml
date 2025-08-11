@@ -1,0 +1,15 @@
+[package]
+name = "native"
+version = "0.0.0-alpha1"
+edition = "2024"
+authors = ["Jaysen Tsao <me@jay3332.tech>"]
+description = "Interact with Adapt Chat natively"
+license = "MIT"
+repository = "https://github.com/adaptchat/native"
+
+[dependencies]
+adapt = { git = "https://github.com/adaptchat/adapt-rs", features = ["chrono"] }
+iced = { version = "0.13", features = ["tokio", "wgpu", "image", "svg"] }
+log = "0.4"
+secrecy = { version = "0.8", features = ["serde"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
